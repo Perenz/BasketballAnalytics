@@ -1,0 +1,33 @@
+Come è composta la struttura:
+File per ogni partita contenente:
+	lista giocatori
+	play by play
+	Dopo l'elaborazione deve contenere (Può essere generato come nuovo file)
+		stat singole per giocatore
+		stat totali come somme singole
+
+File unico con stat globali contenente:
+	lista tutti giocatori che hanno giocato almeno una partita
+	S
+
+Per season stat:
+	Script "aggiungiPartita" che dato un computed stat faccia i totali in modo che:
+		-Giocatori gia presenti in seasonStat vengano sommati
+		-Giocatori non presenti in seasonStat vengano aggiunti
+
+Script "errori" che dica se il gameStatSheet contiene errori del tipo:
+	- Piu tiri fatti che tentati (FG/FGA, 3P/3PA, FT/FTA)
+	
+'''
+From GameStatSheetComputed create a file containing advanced stats such:
+    eFG%
+    TSA
+    TS%
+    AST%
+    BLK% need opponent FGA and 3PA
+    DRB% need opponent ORB
+    ORB% opp DRB can be calculated as FGA - FG, need to consider also FTA with rebound
+    USG%
+
+    0.44*FTA is number of FT without rebound
+'''
