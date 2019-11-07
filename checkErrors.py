@@ -25,7 +25,7 @@ def checkErrs(playersDict):
     sys.exit("Errors in GameStatSheet must be solved before one can continue") if error \
         else print("No errors encountered, GameStatSheet can be computed")
 '''
-A simple script to check some error in GameStatSheet
+A simple script to check if there are errors in GameStatSheet
 Error's kinds:
     - More Shot made than shot attempted (2P/2PA, 3P/3PA, FT/FTA)
     Correctness in 2p and 3p implies correctness in fg
